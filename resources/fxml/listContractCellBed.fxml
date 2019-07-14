@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vBox" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+        <Label maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="134.625" text="%contract.type.bed" HBox.hgrow="ALWAYS">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="stateLabel" maxWidth="1.7976931348623157E308" prefHeight="33.0" text="Label" HBox.hgrow="ALWAYS">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font></Label>
+    </HBox>
+    <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+        <Label fx:id="addressLabel" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="134.625" HBox.hgrow="ALWAYS">
+            <tooltip>
+                <Tooltip text="%contract.residence" />
+            </tooltip>
+        </Label>
+        <Label fx:id="bedNumberLabel" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="134.625" text="%bed.number" HBox.hgrow="ALWAYS">
+            <tooltip>
+                <Tooltip text="" />
+            </tooltip>
+        </Label>
+        <Label fx:id="roomNumberLabel" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="134.625" text="%room.number" HBox.hgrow="ALWAYS">
+            <tooltip>
+                <Tooltip text="%contract.roomID" />
+            </tooltip>
+        </Label>
+    </HBox>
+    <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+        <Label fx:id="renterLabel" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="134.625" text="" HBox.hgrow="ALWAYS">
+            <tooltip>
+                <Tooltip text="%contract.renter" />
+            </tooltip>
+        </Label>
+        <Label fx:id="startDateLabel" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="134.625" text="" HBox.hgrow="ALWAYS">
+            <tooltip>
+                <Tooltip text="%contract.startDate" />
+            </tooltip>
+        </Label>
+        <Label fx:id="endDateLabel" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="134.625" text="" HBox.hgrow="ALWAYS">
+            <tooltip>
+                <Tooltip text="%contract.endDate" />
+            </tooltip>
+        </Label>
+    </HBox>
+</VBox>

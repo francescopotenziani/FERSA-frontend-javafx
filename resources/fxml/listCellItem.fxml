@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="hBox" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="1077.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="apartmentID" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="215.0" text="%apartmentPanel.ID" HBox.hgrow="ALWAYS" />
+      <Label fx:id="lessorID" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="215.0" text="%apartmentPanel.lessor" HBox.hgrow="ALWAYS" />
+      <Label fx:id="address" maxWidth="1.7976931348623157E308" prefHeight="38.0" prefWidth="215.0" text="%apartmentPanel.residence" HBox.hgrow="ALWAYS" />
+      <Label fx:id="insertDate" maxWidth="1.7976931348623157E308" prefHeight="38.0" prefWidth="215.0" text="%apartmentPanel.insertDate" HBox.hgrow="ALWAYS" />
+      <Label fx:id="price" maxWidth="1.7976931348623157E308" prefHeight="38.0" prefWidth="215.0" text="%apartmentPanel.rentalFee" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>

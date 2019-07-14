@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="1077.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.uniroma2.dicii.ispw.fersa.FXController.ContractFXController.ContractPanelFXController">
+   <top>
+      <AnchorPane prefHeight="42.0" prefWidth="1077.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="fullScreenButton" mnemonicParsing="false" onAction="#setFullScreen" prefHeight="31.0" prefWidth="31.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../icon/icons8-fit-to-width-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="enButton" mnemonicParsing="false" onAction="#changeToEnglishLanguage" prefHeight="43.0" prefWidth="44.0" text="%button.English" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="itButton" layoutX="54.0" layoutY="1.0" mnemonicParsing="false" onAction="#changeToItalianLanguage" prefHeight="43.0" prefWidth="44.0" text="%button.Italian" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+         <ListView fx:id="contractList" prefHeight="295.0" prefWidth="723.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="31.0" prefWidth="1077.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#userPanel" prefHeight="31.0" prefWidth="80.0" text="%button.back" />
+            <Button fx:id="submitButton" layoutX="977.0" mnemonicParsing="false" onAction="#contractEdit" text="%button.submit" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Button fx:id="deleteButton" layoutX="829.0" layoutY="2.0" mnemonicParsing="false" onAction="#deleteContract" text="%button.delete" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="hbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="room" alignment="CENTER" prefHeight="31.0" prefWidth="89.8" text="Label" HBox.hgrow="ALWAYS" />
+      <Label fx:id="roomType" prefWidth="89.8">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin></Label>
+      <TextField fx:id="roomFee" prefHeight="31.0" prefWidth="89.8" promptText="Room Fee">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin></TextField>
+      <Label fx:id="bed" alignment="CENTER" prefHeight="31.0" prefWidth="89.8" text="Label" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin></Label>
+      <TextField fx:id="bedFee" prefHeight="31.0" prefWidth="89.8" promptText="Bed Fee">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin></TextField>
+   </children>
+</HBox>

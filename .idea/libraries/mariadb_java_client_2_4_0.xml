@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="mariadb-java-client-2.4.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mariadb-java-client-2.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/mariadb-java-client-2.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

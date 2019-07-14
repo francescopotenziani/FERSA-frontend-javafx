@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.uniroma2.dicii.ispw.fersa.FXController.LoginFXController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="320.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="username" layoutX="99.0" layoutY="153.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="187.0" promptText="%login.username" />
+            <PasswordField fx:id="pass" layoutX="99.0" layoutY="204.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="187.0" promptText="%login.password" />
+            <Button fx:id="loginButton" layoutX="441.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#login" prefHeight="31.0" prefWidth="57.0" text="%login.login" />
+            <ImageView fitHeight="73.0" fitWidth="73.0" layoutX="5.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/45259.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="99.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="71.0" text="%login.LOGIN">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="77.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="27.0" prefWidth="243.0" text="%login.Message">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="59.0" prefWidth="852.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="fullScreenButton" alignment="TOP_RIGHT" layoutX="800.0" layoutY="-1.0" mnemonicParsing="false" onAction="#setFullScreen" prefHeight="31.0" prefWidth="31.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../icon/icons8-fit-to-width-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="enButton" mnemonicParsing="false" onAction="#changeToEnglishLanguage" prefHeight="40.0" prefWidth="44.0" text="%button.English" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="itButton" layoutX="53.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeToItalianLanguage" prefHeight="40.0" prefWidth="44.0" text="%button.Italian" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="870.0" prefWidth="1146.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.uniroma2.dicii.ispw.fersa.FXController.ApartmentFXController.ApartmentEditFXController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="875.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vBox" layoutX="14.0" layoutY="12.0" prefHeight="376.0" prefWidth="449.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="336.0" AnchorPane.topAnchor="12.0">
+               <children>
+                  <ComboBox fx:id="heatingTypeBox" prefWidth="192.0" promptText="%apartmentEdit.heatingType" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                     <tooltip>
+                        <Tooltip text="%apartmentEdit.heatingType" />
+                     </tooltip>
+                  </ComboBox>
+                  <CheckBox fx:id="airConditionBox" mnemonicParsing="false" text="%apartmentEdit.airconditioning" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </CheckBox>
+                  <CheckBox fx:id="tvBox" mnemonicParsing="false" text="%apartmentEdit.tv" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="roomSpaceBox" mnemonicParsing="false" text="%apartmentEdit.sharedRoom" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="wifiBox" mnemonicParsing="false" text="%apartmentEdit.wifi">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="furnishedBox" mnemonicParsing="false" text="%apartmentEdit.Furnished">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="washingMachineBox" mnemonicParsing="false" text="%apartmentEdit.washingMachine" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="dryerBox" mnemonicParsing="false" text="%apartmentEdit.dryer">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="dishwasherBox" mnemonicParsing="false" text="%apartmentEdit.dishWasher">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <ComboBox fx:id="utilityBillsType" prefWidth="192.0" promptText="%apartmentEdit.utilityBills" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                     <tooltip>
+                        <Tooltip text="%apartmentEdit.utilityBills" />
+                     </tooltip>
+                  </ComboBox>
+                  <TextField fx:id="rentalFeeTextField" alignment="CENTER" maxWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefWidth="192.0" promptText="%apartmentEdit.rentalFee">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                     <tooltip>
+                        <Tooltip text="%apartmentEdit.rentalFee" />
+                     </tooltip>
+                  </TextField>
+                  <TextField fx:id="condominiumFeeTextField" alignment="CENTER" maxWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefWidth="192.0" promptText="%apartmentEdit.condominiumFee">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                     <tooltip>
+                        <Tooltip text="%apartmentEdit.condominiumFee" />
+                     </tooltip>
+                  </TextField>
+                  <ComboBox fx:id="rentTypeBox" prefHeight="31.0" prefWidth="194.0" promptText="%apartmentEdit.rentType" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                     <tooltip>
+                        <Tooltip text="%apartmentEdit.rentType" />
+                     </tooltip>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <VBox fx:id="vBox1" layoutX="336.0" layoutY="12.0" prefHeight="598.0" prefWidth="513.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="336.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="12.0">
+               <children>
+                  <HBox prefHeight="62.0" prefWidth="500.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="%room.number" />
+                        <Label text="%room.type">
+                           <HBox.margin>
+                              <Insets left="17.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="%room.fee">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="17.0" />
+                           </padding>
+                        </Label>
+                        <Label text="%bed.number">
+                           <padding>
+                              <Insets left="17.0" />
+                           </padding>
+                        </Label>
+                        <Label text="%bed.fee">
+                           <padding>
+                              <Insets left="17.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ListView fx:id="lvroom" editable="true" prefHeight="610.0" prefWidth="513.0" VBox.vgrow="ALWAYS" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="newBedFeeTextField" prefHeight="31.0" prefWidth="259.0" promptText="%apartmentEdit.insert.bedFee">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="addButton" mnemonicParsing="false" onAction="#addBed" prefHeight="31.0" prefWidth="100.0" text="%button.add">
+                           <HBox.margin>
+                              <Insets left="44.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="deleteButton" alignment="CENTER" mnemonicParsing="false" onAction="#deleteBed" prefHeight="31.0" prefWidth="100.0" text="%button.delete">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="33.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="submitButton" mnemonicParsing="false" onAction="#updateApartment" prefHeight="31.0" prefWidth="101.0" text="%button.submit" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#apartmentPanel" prefHeight="31.0" prefWidth="104.0" text="%button.back" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="31.0" prefWidth="727.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="fullScreenButton" alignment="TOP_RIGHT" layoutX="800.0" layoutY="-1.0" mnemonicParsing="false" onAction="#setFullScreen" prefHeight="31.0" prefWidth="31.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../icon/icons8-fit-to-width-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="enButton" layoutY="6.0" mnemonicParsing="false" onAction="#changeToEnglishLanguage" prefHeight="40.0" prefWidth="44.0" text="%button.English" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="itButton" layoutX="54.0" mnemonicParsing="false" onAction="#changeToItalianLanguage" prefHeight="40.0" prefWidth="44.0" text="%button.Italian" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

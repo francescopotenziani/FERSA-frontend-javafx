@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1077.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.uniroma2.dicii.ispw.fersa.FXController.ContractFXController.ContractEditFXController">
+    <top>
+        <AnchorPane prefHeight="42.0" prefWidth="1077.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="fullScreenButton" mnemonicParsing="false" onAction="#setFullScreen" prefHeight="31.0" prefWidth="31.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@../icon/icons8-fit-to-width-32.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="enButton" mnemonicParsing="false" onAction="#changeToEnglishLanguage" prefHeight="43.0" prefWidth="44.0" text="%button.English" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="itButton" layoutX="54.0" layoutY="1.0" mnemonicParsing="false" onAction="#changeToItalianLanguage" prefHeight="43.0" prefWidth="44.0" text="%button.Italian" AnchorPane.topAnchor="0.0" />
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+
+    </center>
+    <bottom>
+        <AnchorPane prefHeight="31.0" prefWidth="1077.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="backButton" mnemonicParsing="false" onAction="#contractPanel" prefHeight="31.0" prefWidth="80.0" text="%button.back" />
+                <Button fx:id="submitButton" layoutX="977.0" mnemonicParsing="false" onAction="#updateContract" text="%button.submit" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            </children>
+        </AnchorPane>
+    </bottom>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" fillWidth="false" layoutX="339.0" layoutY="132.0" prefHeight="346.0" prefWidth="400.0" AnchorPane.bottomAnchor="153.0" AnchorPane.leftAnchor="339.0" AnchorPane.rightAnchor="338.0" AnchorPane.topAnchor="132.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="216.0" text="%contract.startDate" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="startDatePicker" promptText="%contract.startDate" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                      <tooltip>
+                          <Tooltip text="%contract.startDate" />
+                      </tooltip>
+                  </DatePicker>
+                  <Label text="%contract.endDate">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="endDatePicker" promptText="%contract.endDate" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                      <tooltip>
+                          <Tooltip text="%contract.endDate" />
+                      </tooltip>
+                  </DatePicker>
+                  <Label text="%apartmentEdit.rentalFee">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="rentalFeeTextField" alignment="CENTER" prefWidth="218.0" promptText="%apartmentEdit.rentalFee">
+                     <VBox.margin>
+                        <Insets left="90.0" right="90.0" top="20.0" />
+                     </VBox.margin>
+                      <tooltip>
+                          <Tooltip text="%apartmentEdit.rentalFee" />
+                      </tooltip>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
